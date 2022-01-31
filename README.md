@@ -11,11 +11,11 @@ https://docs.google.com/document/d/1VedkRcsN6yukGO2uWES4RuIM8KMtESZ8p7zD7nGySMs
 
 # Technologies used:
 
-* Glide
+* Material Design
 * Navigation Component
-* dataBinding
+* viewBinding
 * Coroutines/Flows
 * Clean architecture, MVVM
 * Dagger
 * Retrofit
-* Material Design
+* Glide
