@@ -73,4 +73,13 @@ public class Libs {
     static String androidxHiltCompiler = "androidx.hilt:hilt-compiler:1.0.0";
     //Paging
     static String paging = "androidx.paging:paging-runtime-ktx:3.0.1";
+
+    // Annotation processor
+
+    // androidx.lifecycle
+    static String lifecycleCompiler = "androidx.lifecycle:lifecycle-compiler:" + Versions.ktx_version;
+    // androidx.room
+    static String roomCompiler = "androidx.room:room-compiler:" + Versions.room_version;
+    //dagger
+    static String daggerCompiler = "com.google.dagger:dagger-compiler:" + Versions.dagger_version;
 }

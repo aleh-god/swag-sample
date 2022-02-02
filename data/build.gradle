@@ -41,12 +41,12 @@ dependencies {
     //room
     implementation Libs.room
     implementation Libs.roomKtx
-    kapt Kapt.roomCompiler
+    kapt Libs.roomCompiler
     //network
     implementation Libs.okHttp
     implementation Libs.retrofit
     implementation Libs.logInterceptor
     // DI
     implementation Libs.dagger
-    kapt Kapt.daggerCompiler
+    kapt Libs.daggerCompiler
 }

@@ -12,5 +12,5 @@ java {
 dependencies {
     // DI
     implementation Libs.dagger
-    kapt Kapt.daggerCompiler
+    kapt Libs.daggerCompiler
 }
