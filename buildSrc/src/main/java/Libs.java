@@ -5,6 +5,12 @@ public class Libs {
     static String appcompat = "androidx.appcompat:appcompat:1.3.1";
     static String material = "com.google.android.material:material:1.4.0";
     static String constraint = "androidx.constraintlayout:constraintlayout:2.1.1";
+    static String recyclerView = "androidx.recyclerview:recyclerview:" + Versions.recyclerView_version;
+    // For control over item selection of both touch and mouse driven selection
+    static String recyclerViewSelection = "androidx.recyclerview:recyclerview-selection:" + Versions.recyclerViewSelection_version;
+
+    static String viewPager2 = "androidx.viewpager2:viewpager2:" + Versions.viewPager2_version;
+
     //navigation
     static String navFragment = "androidx.navigation:navigation-fragment-ktx:" + Versions.navigation_version;
     static String navUi = "androidx.navigation:navigation-ui-ktx:" + Versions.navigation_version;

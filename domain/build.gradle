@@ -10,6 +10,7 @@ java {
 }
 
 dependencies {
+    implementation Libs.coroutines
     // DI
     implementation Libs.dagger
     kapt Libs.daggerCompiler

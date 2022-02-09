@@ -46,11 +46,18 @@ dependencies {
 }
 
 dependencies {
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
     implementation Libs.kotlinStdLib
     implementation Libs.corektx
     implementation Libs.appcompat
     implementation Libs.material
     implementation Libs.constraint
+    implementation Libs.recyclerView
+    implementation Libs.recyclerViewSelection
+    implementation Libs.viewPager2
 
     //coroutines
     implementation Libs.coroutines
