@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Swagger Application</string>
+    <string name="header_category_rv">Select Category</string>
+    <string name="view_all">view all</string>
+    <string name="category_item_image">Category item image</string>
+    <string name="seller_item_image">Seller item image</string>
+    <string name="sales_new">New</string>
+    <string name="btn_buy_text">Buy now!</string>
+    <string name="descr_filter_button">Filter button</string>
+    <string name="descr_new_sale_mark">New sale mark</string>
+    <string name="descr_image_view_sale">Image view sale</string>
+    <string name="descr_favorite_seller_image">Favorite seller image</string>
+    <string name="descr_favorite_seller_mark">Favorite seller mark</string>
+    <string name="see_more">see more</string>
 </resources>

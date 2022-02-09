@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="@dimen/sales_corner_radius"
+    android:elevation="0dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/sales_card_width"
+        android:layout_height="@dimen/sales_card_height"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        >
+
+        <ImageView
+            android:id="@+id/image_sales_new"
+            android:layout_width="@dimen/sales_image_new_dimen"
+            android:layout_height="@dimen/sales_image_new_dimen"
+            android:layout_marginStart="@dimen/sales_text_marginStart"
+            android:layout_marginTop="@dimen/sales_text_new_marginTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/descr_new_sale_mark"
+            android:src="@drawable/ellipse_fill"
+            />
+
+        <TextView
+            android:id="@+id/text_sales_new"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_sales_new"
+            app:layout_constraintEnd_toEndOf="@+id/image_sales_new"
+            app:layout_constraintStart_toStartOf="@+id/image_sales_new"
+            app:layout_constraintTop_toTopOf="@+id/image_sales_new"
+            android:gravity="center"
+            android:text="@string/sales_new"
+            style="@style/TextAppearance.Swagger.SalesTextNew"
+            />
+
+        <TextView
+            android:id="@+id/text_name_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sales_text_marginStart"
+            android:layout_marginTop="@dimen/sales_text_name_marginTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center_horizontal|top"
+            style="@style/TextAppearance.Swagger.SalesTextName"
+            tools:text="Iphone 12"
+            />
+
+        <TextView
+            android:id="@+id/text_intro_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sales_text_marginStart"
+            android:layout_marginTop="@dimen/sales_text_marginTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_name_sales"
+            android:gravity="center_horizontal|top"
+            style="@style/TextAppearance.Swagger.SalesTextIntro"
+            tools:text="Best phone of the world!"
+            />
+
+        <Button
+            android:id="@+id/btn_buy_sales"
+            android:layout_width="@dimen/sales_btn_buy_width"
+            android:layout_height="@dimen/sales_btn_buy_height"
+            android:layout_marginStart="@dimen/sales_text_marginStart"
+            android:layout_marginTop="@dimen/sales_text_marginTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_intro_sales"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:backgroundTint="@color/white"
+            android:text="@string/btn_buy_text"
+            style="@style/TextAppearance.Swagger.SalesTextBtn"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/barrier_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:constraint_referenced_ids="image_sales_background"
+            app:layout_constraintGuide_end="@dimen/sales_guideline_range"
+            />
+
+        <ImageView
+            android:id="@+id/image_sales_background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/barrier_sales"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/descr_image_view_sale"
+            tools:src="@drawable/ic_launcher_background"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

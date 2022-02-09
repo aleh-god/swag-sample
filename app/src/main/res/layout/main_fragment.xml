@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <ImageButton
+        android:id="@+id/btn_filter"
+        android:layout_width="11dp"
+        android:layout_height="13dp"
+        android:layout_marginEnd="@dimen/main_layout_marginEnd"
+        android:layout_marginTop="@dimen/main_layout_marginTop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/header_category_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_filter"
+        android:contentDescription="@string/descr_filter_button"
+        style="@style/Widget.Swagger.Button"
+        />
+
+    <!-- Select Category -->
+
+    <TextView
+        android:id="@+id/header_category_rv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_layout_marginTop"
+        app:layout_constraintEnd_toStartOf="@id/btn_category_view_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_filter"
+        android:text="@string/header_category_rv"
+        tools:text="Select Category"
+        style="@style/Widget.Swagger.HeaderText"
+        />
+
+    <Button
+        android:id="@+id/btn_category_view_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/header_category_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/header_category_rv"
+        android:text="@string/view_all"
+        tools:text="view all"
+        style="@style/Widget.Swagger.TextButton"
+        />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="header_category_rv, btn_category_view_all"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="LinearLayoutManager"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/main_layout_marginTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier_category"
+        tools:listitem="@layout/item_category"
+        />
+
+    <!-- Hot Sales -->
+    <TextView
+        android:id="@+id/header_sales_vp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_sales_see_more"
+        app:layout_constraintTop_toBottomOf="@id/category_rv"
+        app:layout_constraintBaseline_toBaselineOf="@id/btn_sales_see_more"
+        android:text="@string/header_category_rv"
+        tools:text="Hot Sales"
+        style="@style/Widget.Swagger.HeaderText"
+        />
+
+    <Button
+        android:id="@+id/btn_sales_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/category_rv"
+        app:layout_constraintStart_toEndOf="@id/header_sales_vp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/see_more"
+        tools:text="see more"
+        style="@style/Widget.Swagger.TextButton"
+        />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="header_sales_vp, btn_sales_see_more"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/hot_sales_vp"
+        android:layout_width="@dimen/main_vp2_width"
+        android:layout_height="@dimen/main_vp2_height"
+        android:layout_marginHorizontal="@dimen/main_vp2_marginHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier_sales"
+        />
+
+    <!-- Best Seller -->
+    <TextView
+        android:id="@+id/header_best_rv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_best_see_more"
+        app:layout_constraintTop_toBottomOf="@id/hot_sales_vp"
+        app:layout_constraintBaseline_toBaselineOf="@id/btn_best_see_more"
+        android:text="@string/header_category_rv"
+        tools:text="Best Seller"
+        style="@style/Widget.Swagger.HeaderText"
+        />
+
+    <Button
+        android:id="@+id/btn_best_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/hot_sales_vp"
+        app:layout_constraintStart_toEndOf="@id/header_best_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/see_more"
+        tools:text="see more"
+        style="@style/Widget.Swagger.TextButton"
+        />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_best"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="header_best_rv, btn_best_see_more"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/best_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:orientation="vertical"
+        app:spanCount="2"
+        android:layout_marginHorizontal="@dimen/main_rv_marginHorizontal"
+        android:layout_marginVertical="@dimen/main_rv_marginVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier_best"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_seller"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

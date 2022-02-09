@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/image_category_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_category_item"
+        android:src="@drawable/ellipse_fill"
+        android:contentDescription="@string/category_item_image" />
+
+    <ImageView
+        android:id="@+id/icon_category_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_health"
+        app:layout_constraintTop_toTopOf="@+id/image_category_item"
+        app:layout_constraintStart_toStartOf="@+id/image_category_item"
+        app:layout_constraintEnd_toEndOf="@+id/image_category_item"
+        app:layout_constraintBottom_toBottomOf="@+id/image_category_item"
+        android:contentDescription="@string/category_item_image" />
+
+    <TextView
+        android:id="@+id/text_category_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/image_category_item"
+        app:layout_constraintEnd_toEndOf="@+id/image_category_item"
+        app:layout_constraintTop_toBottomOf="@id/image_category_item"
+        android:paddingTop="7dp"
+        tools:text="Computer"
+        style="@style/Widget.Swagger.CategoryText"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
