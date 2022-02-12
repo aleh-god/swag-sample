@@ -1,48 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="item_margin_small">7dp</dimen>
-    <dimen name="item_corner_radius">17dp</dimen>
-    <dimen name="item_elevation">40dp</dimen>
-    <dimen name="item_width">181dp</dimen>
-    <dimen name="item_height">227dp</dimen>
-    <dimen name="item_image_width">187dp</dimen>
-    <dimen name="item_image_height">168dp</dimen>
-    <dimen name="item_image_fav_dimen">25dp</dimen>
-    <dimen name="item_image_icon_dimen">10dp</dimen>
-    <dimen name="item_fav_marginTop">6dp</dimen>
-    <dimen name="item_fav_marginEnd">15dp</dimen>
-    <dimen name="item_text_price_marginStart">21dp</dimen>
-    <dimen name="item_text_price_marginTop">2dp</dimen>
-    <dimen name="item_text_name_marginHorizontal">21dp</dimen>
-    <dimen name="item_text_name_marginTop">5dp</dimen>
-    <dimen name="item_text_name_marginBottom">15dp</dimen>
 
-    <dimen name="sales_corner_radius">10dp</dimen>
-    <dimen name="sales_card_width">390dp</dimen>
-    <dimen name="sales_card_height">200dp</dimen>
-    <dimen name="sales_image_new_dimen">25dp</dimen>
-    <dimen name="sales_text_marginStart">32dp</dimen>
-    <dimen name="sales_text_marginTop">5dp</dimen>
-    <dimen name="sales_text_name_marginTop">68dp</dimen>
-    <dimen name="sales_text_new_marginTop">23dp</dimen>
-    <dimen name="sales_btn_buy_width">98dp</dimen>
-    <dimen name="sales_btn_buy_height">35dp</dimen>
-    <dimen name="sales_guideline_range">243dp</dimen>
-
-    <dimen name="main_layout_marginEnd">30dp</dimen>
-    <dimen name="main_layout_marginStart">17dp</dimen>
-    <dimen name="main_layout_marginTop">17dp</dimen>
-    <dimen name="main_vp2_width">400dp</dimen>
-    <dimen name="main_vp2_height">200dp</dimen>
-    <dimen name="main_vp2_marginHorizontal">5dp</dimen>
-
-    <dimen name="main_rv_marginHorizontal">10dp</dimen>
-    <dimen name="main_rv_marginVertical">5dp</dimen>
-
-    <dimen name="text_size_small_1">10sp</dimen>
-    <dimen name="text_size_small_2">11sp</dimen>
-    <dimen name="text_size_small_3">12sp</dimen>
-    <dimen name="text_size_medium_1">15sp</dimen>
-    <dimen name="text_size_medium_2">16sp</dimen>
-    <dimen name="text_size_big">25sp</dimen>
 </resources>
